@@ -1,0 +1,10 @@
+{
+    "name": "Hello Smart Ass!",
+    "description": "Wanna play?",
+    "version": "0.1",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "SmartAss.html",
+        "default_icon": "WordleIcon.png"
+    }
+}
