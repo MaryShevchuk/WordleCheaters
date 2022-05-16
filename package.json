@@ -1,0 +1,21 @@
+{
+  "name": "wordleword",
+  "version": "1.0.0",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaryShevchuk/WordleCheaters.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaryShevchuk/WordleCheaters/issues"
+  },
+  "homepage": "https://github.com/MaryShevchuk/WordleCheaters#readme",
+  "description": ""
+}
