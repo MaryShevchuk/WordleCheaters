@@ -1,58 +1,56 @@
    
-    import dictionaryData from './data/dictionaryData.js';
-    import letterCounter from './letterCounter.js';
-    import sortDictionary from './sortDictionary.js';
+import dictionaryData from './data/dictionaryData.js';
+import letterCounter from './letterCounter.js';
+import sortDictionary from './sortDictionary.js';
+// import resultAscend from './sortedValuesKeys.js';
 
-    // import dictionaryJSON from './data/dictionaryy.json' assert { type: 'json' }; - another variant for import method 
+// СОРТИРУЕМ РЕЗУЛЬТ ПО АЛФАВИТУ ВАРИАНТ №1
+// const keys = Object.keys(result);
+// keys.sort()
+//     .forEach(key => {
+//         console.log(key, ': ', result[key]);
+//     });
 
-    // console.log('data', dictionaryData) - to see the output from import data from dictionaryData.js
-    //console.log('dictionaryJSON', dictionaryJSON)  - to see the output from import data from dictionaryy.json
-
-
-    // import * as bla from './data/other.js'; - another example to learn import methods
-    // console.log('bla', bla)
-
-    
-
-
-    //  function letterCounter(eachWord) {
-    //      const dictionary = {};
-
-    //     eachWord.forEach((text) => {
-    //         for (let i = 0; i < text.length; i++) {
-    //             // console.log(text[i]);
-
-    //             const letter = text[i].toLowerCase();
-
-    //             if (dictionary[letter] === undefined) {
-    //                 dictionary[letter] = 1; 
-    //             } else{
-    //                 dictionary[letter]++;
-    //             }
-    //         }
-    //     });
-    //     return dictionary;
-    //   }
+// СОРТИРУЕМ РЕЗУЛЬТ ПО АЛФАВИТУ ВАРИАНТ №2
+// const result = letterCounter(dictionaryData);
+// const sortedResult = sortDictionary(result);
+// console.log('result = ', sortedResult);
+// sortDictionary(result);
+// console.log(result);
 
 
-    // export default function sortDictionary(dictionary) {
-    //     const letters = Object.keys(dictionary);
-    //     console.log('letters in all words', letters); 
-    
-    //     const alphabetLetters = letters.sort();
-    //     const sortedDictionary = {};
-    //     console.log('letters in alphabetical order', alphabetLetters);
-    
-    //     alphabetLetters.forEach((letter) => {
-    //         sortDictionary[letter] = dictionary[letter];
-    //     })
-    // }
-    
+// СОРТИРУЕМ ТОЛЬКО КЛЮЧИ ИЗ СЛОВАРЯ, ВЫВОДИМ ТОЛЬКО БУКВЫ
+// const result = letterCounter(dictionaryData);
+// const key = Object.keys(result);
+// key.forEach(key => {
+//     console.log(key);
+// });
 
-const result = letterCounter(dictionaryData);
-console.log('result = ', JSON.stringify(result, null, 2));
-sortDictionary(result);
-// console.log('result = ', JSON.stringify(result, null, 2));
+// СОРТИРУЕМ ТОЛЬКО ЗНАЧЕНИЯ ИЗ СЛОВАРЯ, ВЫВОДИМ ТОЛЬКО ЧИСЛА
+// const result = letterCounter(dictionaryData);
+// const key = Object.keys(result);
+// const values = Object.values(result);
+// values.sort()
+//       .forEach(values => {
+//             console.log(values);
+//         });
+
+// СОРТИРУЕМ ТОЛЬКО ЗНАЧЕНИЯ ИЗ СЛОВАРЯ, ВЫВОДИМ ТОЛЬКО ЧИСЛА В ПОРЯДКЕ ВОЗРАСТАНИЯ
+// const result = letterCounter(dictionaryData);
+// const values = Object.values(result);
+// values.sort((a, b) => a - b);
+// console.log(values);
+
+// СОРТИРУЕМ ТОЛЬКО ЗНАЧЕНИЯ ИЗ СЛОВАРЯ, ВЫВОДИМ ТОЛЬКО ЧИСЛА В ПОРЯДКЕ УБЫВАНИЯ
+// const result = letterCounter(dictionaryData);
+// const values = Object.values(result);
+// values.sort((a, b) => b - a);
+// console.log(values);
+
+
+// СОРТИРУЕМ ЗНАЧЕНИЯ И КЛЮЧИ ИЗ СЛОВАРЯ, ВЫВОДИМ ЧИСЛА В ПОРЯДКЕ ВОЗРАСТАНИЯ И БУКВЫ 
+// ---------- ДУМАЮ ---------------
+
 
 
 

@@ -1,22 +1,17 @@
-export default function letterCounter(eachWord) {
-    const dictionary = {};
+export default function letterCounter(words) {
+    const letterCount = {};
 
-   eachWord.forEach((text) => {
-       for (let i = 0; i < text.length; i++) {
-           // console.log(text[i]);
+    words.forEach((word) => {
+        for (let i = 0; i < word.length; i++) {
+            const letter = word[i].toLowerCase();
+            
+            if (letterCount[letter] === undefined) {
+                letterCount[letter] = 1; 
+            } else {
+                letterCount[letter]++;
+            }
+        }
+    });
 
-           const letter = text[i].toLowerCase();
-
-           if (dictionary[letter] === undefined) {
-               dictionary[letter] = 1; 
-           } else{
-               dictionary[letter]++;
-           }
-
-       }
-   });
-   return dictionary;
+    return letterCount;
  }
-
-
-
